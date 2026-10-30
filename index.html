@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Beach Lab">
+<meta name="theme-color" content="#000000">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" href="icon-180.png">
+<link rel="stylesheet" href="style.css">
+<title>Beach Lab</title>
+</head>
+<body>
+<main id="app"></main>
+<nav id="tabbar">
+  <button data-tab="schede"><span>🏋️</span>Schede</button>
+  <button data-tab="libreria"><span>📚</span>Libreria</button>
+  <button data-tab="progressi"><span>📈</span>Progressi</button>
+  <button data-tab="guida"><span>🏐</span>Guida</button>
+</nav>
+<div id="sheet" hidden>
+  <div class="sheet-panel">
+    <header><button id="sheet-close">Chiudi</button></header>
+    <div id="sheet-body"></div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
